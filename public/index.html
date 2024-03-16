@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page with Search Bar and Lists</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Awfatech API Documentation </h1>
+        <!-- <span>&#128462;</span> -->
+        <div>
+            <input type="text" id="searchInput" placeholder="Search..." oninput="updateSearch()"
+                onkeydown="handleKeyDown()">
+            <button onclick="searchList()">Search</button>
+            <div id="suggestions-popup"></div>
+        </div>
+    </header>
+
+    <main>
+        <ul>
+            <button class="accordion">README <small>( How to test API. )</small></button>
+            <div class="panel docs">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sunt fuga est provident, eos deserunt tenetur commodi quis architecto totam minima exercitationem rem, cum ea optio facere aliquam, quia modi perspiciatis nobis? Sapiente, ipsa? Esse accusamus voluptate praesentium dignissimos rerum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sunt fuga est provident, eos deserunt tenetur commodi quis architecto totam minima exercitationem rem, cum ea optio facere aliquam, quia modi perspiciatis nobis? Sapiente, ipsa? Esse accusamus voluptate praesentium dignissimos rerum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sunt fuga est provident, eos deserunt tenetur commodi quis architecto totam minima exercitationem rem, cum ea optio facere aliquam, quia modi perspiciatis nobis? Sapiente, ipsa? Esse accusamus voluptate praesentium dignissimos rerum.</p>
+            </div>
+            <a href="/alumni">
+                <li>Alumni</li>
+            </a>
+            <a href="/auth">
+                <li>Auth</li>
+            </a>
+            <a href="/cms">
+                <li>CMS</li>
+            </a>
+            <button class="accordion">CRM <small>( Under this all the APIs are for admin. )</small></button>
+            <ul class="panel">
+                <a href="/crm-alumni">
+                    <li>CRM <small>( alumni-admin )</small></li>
+                </a>
+                <a href="/crm-client">
+                    <li>CRM <small>(client)</small></li>
+                </a>
+                <a href="/crm-supplier">
+                    <li>CRM <small>(supplier)</small></li>
+                </a>
+            </ul>
+            <a href="/email">
+                <li>Email</li>
+            </a>
+            <a href="/finance">
+                <li>Finance</li>
+            </a>
+            <button class="accordion">HR</button>
+            <ul class="panel">
+                <a href="/staff">
+                    <li>Staff</li>
+                </a>
+            </ul>
+            <!-- Add more list items as needed -->
+        </ul>
+    </main>
+
+    <!-- <script src="./script.js"></script> -->
+</body>
+
+</html>
